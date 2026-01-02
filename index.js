@@ -5,3 +5,15 @@
 
 // Ignore the case when matching the search terms.
 // Return the images in the same order they appear in the input array.
+
+function imageSearch(images, term) {
+  console.log(images, term);
+  const arr = [];
+
+  for (let i = 0; i < images.length; i++) {
+    if (images[i].toLowerCase().includes(term.toLowerCase())) {
+      arr.push(images[i]);
+    }
+  }
+  return arr;
+}
